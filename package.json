@@ -1,0 +1,12 @@
+{
+  "name": "pdai-tech-doc",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "devDependencies": {
+    "vuepress": "^1.0.2"
+  }
+}
