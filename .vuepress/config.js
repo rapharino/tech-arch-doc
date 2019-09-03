@@ -18,8 +18,8 @@ module.exports = {
     },
     head: [["link", {rel: "icon", href: `/favicon.ico`}]],
     themeConfig: {
-        repo: "realdai/tech_arch",
-        docsRepo: "realdai/tech_arch",
+        repo: "realdai/tech-arch-doc",
+        docsRepo: "realdai/tech-arch-doc",
         editLinks: true,
         sidebarDepth:0,
         locales: {
