@@ -227,7 +227,7 @@ public class UserController {
 ```
 
 
-## 示例源码
+### 示例源码
 
-https://github.com/ityouknow/spring-boot-examples/tree/master/spring-boot-mybatis
+https://github.com/realpdai/springboot-mybatis-demo
 
