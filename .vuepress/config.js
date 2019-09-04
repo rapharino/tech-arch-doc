@@ -102,6 +102,53 @@ function genSidebar4Java(){
         }
     ];
 }
+function _getNav(){
+
+}
+function _getSidebar(){
+    
+}
+function _getSidebarPage(_pagePath){
+    return _getSidebarGroups(_pagePath, 
+        ["Java 基础","Java 集合框架","Java IO/NIO/AIO"],
+        ["basic/", "collection/", 'io/'],
+        [
+            ["java-basic-oop.md", "java-basic-lan-basic.md", "java-basic-lan-sum.md"],
+            ["java-collection-all.md", "java-collection-ArrayList.md", "java-collection-LinkedList.md", 
+                "java-collection-Queue&Stack.md", "java-collection-PriorityQueue.md", "java-map-HashMap&HashSet.md",
+                "java-map-LinkedHashMap&LinkedHashSet.md", "java-map-TreeMap&TreeSet.md", "java-map-WeakHashMap.md",
+            ],
+            [
+                "java-io.md", 
+                "java-io-basic.md",
+                "java-io-basic2.md",
+                "java-io-basic3.md",
+                "java-io-model.md",
+                "java-io-nio.md",
+                "java-io-nio-netty.md"
+            ]
+        ]
+    );
+}
+function _getSidebarGroups(_pagePath, _titles, _pathPrefixs, _contents){
+    var groups = [];
+    for(var i = 0; i<_ti.length; i++){
+        groups.push(_getSidebarGroup(_pagePath, _titles[i], _pathPrefixs[i], _contents[i]));
+    }
+    return groups;
+}
+function _getSidebarGroup(_pagePath, _title, _prefixPath, _content){
+    var content = [];
+    for(var i = 0; i<_content.length; i++){
+        content.push(_pagePath + _prefixPath + _content[i]);
+    }
+    return {
+        title: _title,
+        collapsable: false,
+        sidebarDepth: 0, 
+        children: content
+    };
+}
 function genSidebar4Spring() {
     return [
         {
