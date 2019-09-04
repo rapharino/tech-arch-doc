@@ -789,7 +789,8 @@
 
 "@vuepress/plugin-back-to-top@^1.0.3":
   version "1.0.3"
-  resolved "http://10.11.105.11:8081/repository/npm/@vuepress/plugin-back-to-top/-/plugin-back-to-top-1.0.3.tgz#f10eb97a85781b044803ae96aceb5006cc6075b0"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-back-to-top/-/plugin-back-to-top-1.0.3.tgz#f10eb97a85781b044803ae96aceb5006cc6075b0"
+  integrity sha512-GTJKGnxep+2pMi22Uj4dm7kqxbifkRyGU7SrzWa7I26UpbuQ6M87EN6uCoH7CNTapv0O+kwrht7wci4BuPo5wg==
   dependencies:
     lodash.debounce "^4.0.8"
 

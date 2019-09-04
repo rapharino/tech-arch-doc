@@ -37,7 +37,9 @@ module.exports = {
                         items: [
                             {text: 'Java 基础', link: '/md/java/basic/java-basic-oop.md'},
                             {text: 'Java 集合框架', link: '/md/java/collection/java-collection-all.md'},
-                            {text: 'Java IO/NIO/AIO', link: '/md/java/io/java-io.md'}
+                            {text: 'Java 多线程与并发', link: '/md/java/thread/java-thread.md'},
+                            {text: 'Java IO/NIO/AIO', link: '/md/java/io/java-io.md'},
+                            {text: 'Java8 特性详解', link: '/md/java/java8/java8.md'}
                         ]
                     },
                     {
@@ -87,6 +89,18 @@ function genSidebar4Java(){
             ]
         },
         {
+            title: "Java 多线程与并发",
+            collapsable: false,
+            sidebarDepth: 1, 
+            children: [
+                "thread/java-thread.md", 
+                "thread/java-thread-status.md", 
+                "thread/java-thread-concurrent-basic.md", 
+                "thread/java-thread-concurrent-class.md", 
+                "thread/java-thread-threadlocal.md"
+            ]
+        },
+        {
             title: "Java IO/NIO/AIO",
             collapsable: false,
             sidebarDepth: 0, 
@@ -98,6 +112,26 @@ function genSidebar4Java(){
                 "io/java-io-model.md",
                 "io/java-io-nio.md",
                 "io/java-io-nio-netty.md"
+            ]
+        },
+        {
+            title: "Java8 特性详解",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
+                "java8/java8.md", 
+                "java8/java8-stream.md", 
+                "java8/java8-optional.md", 
+                "java8/java8-default.md", 
+                "java8/java8-type-anno.md", 
+                "java8/java8-anno-repeat.md", 
+                "java8/java8-type.md", 
+                "java8/java8-jre.md",
+                "java8/java8-permgen.md",
+                "java8/java8-stampedlock.md",
+                "java8/java8-localdatetime.md",
+                "java8/java8-javafx.md",
+                "java8/java8-others.md"
             ]
         }
     ];
