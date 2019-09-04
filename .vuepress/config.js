@@ -30,16 +30,24 @@ module.exports = {
                 lastUpdated: "上次更新",
                 nav: [
                     {
-                        text: "Spring 相关",
-                        link: "/md/spring/"
+                        text: 'Spring 相关',
+                        items: [
+                            {text: 'Spring 基础', link: '/md/spring/spring.md'},
+                            {text: 'Spring Boot 入门', link: '/md/spring/springboot-helloworld.md'},
+                            {text: 'Spring Boot 进阶', link: '/md/spring/springboot-data-multi.md'}
+                        ]
                     }
+                    // , {text: "Spring 相关", link: "/md/spring/" }
                 ],
                 sidebar: {
                     "/md/spring/": genSidebar4Spring()
                 }
             }
         }
-    }
+    },
+    plugins: [
+        ['@vuepress/back-to-top', true]
+    ]
 };
 
 function genSidebar4Spring() {
@@ -49,7 +57,7 @@ function genSidebar4Spring() {
             collapsable: false,
             sidebarDepth: 0, 
             children: [
-                "", 
+                "spring", 
                 "springmvc",
                 "spring-bean-lifecycle",
                 "spring-aop",

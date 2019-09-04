@@ -11,23 +11,14 @@ sidebarDepth: 0
 ### 学习MyBatis的路线
 
 + 了解ORM和iBatis
-
 + 基于xml配置方式的MyBatis
-
 + 基于注解配置方式的MyBatis
-
 + MyBatis 多表关联
-
 + MyBatis 多数据源
-
 + MyBatis 分页，方言
-
 + MyBatis Code Generator
-
 + MyBatis Plus + IDEA 插件
-
 + MyBatis 原理和基本组件
-
 + MyBatis 源码
 
 > 更加推荐JPA，但是MyBatis原理和源码值得一读，请参考ORM MyBatis源码解读。
