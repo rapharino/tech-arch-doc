@@ -54,7 +54,20 @@ module.exports = {
                         text: '数据库相关',
                         items: [
                             {
-                                text: 'NoSQL',
+                                text: '数据库原理和SQL',
+                                items: [
+                                    {text: '数据库原理', link: '/md/db/sql/sql-db.md'},
+                                    {text: 'SQL语言', link: '/md/db/sql-lan/sql-lan.md'}
+                                ]
+                            },
+                            {
+                                text: 'SQL DB',
+                                items: [
+                                    {text: 'MySQL', link: '/md/db/sql-mysql/sql-mysql-theory.md'}
+                                ]
+                            },
+                            {
+                                text: 'NoSQL DB',
                                 items: [
                                     {text: 'ElasticSearch', link: '/md/db/nosql-es/elasticsearch.md'},
                                     {text: 'MongoDB', link: '/md/db/nosql-mongo/mongo.md'}
@@ -73,8 +86,38 @@ module.exports = {
     }
 };
 
+// DB page
 function genSidebar4DB(){
     return [
+        {
+            title: "数据库基础和原理",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
+                "sql/sql-db.md", 
+                "sql/sql-db-theory.md", 
+                "sql/sql-db-transaction.md"
+            ]
+        },
+        {
+            title: "SQL 语言",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
+                "sql-lan/sql-lan.md", 
+                "sql-lan/sql-lan-pratice.md",
+                "sql-lan/sql-lan-leetcode.md",
+                "sql-lan/sql-lan-optimize.md"
+            ]
+        },
+        {
+            title: "SQL - MySQL",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
+                "sql-mysql/sql-mysql-theory.md"
+            ]
+        },
         {
             title: "NoSQL - ElasticSearch",
             collapsable: false,
@@ -99,6 +142,8 @@ function genSidebar4DB(){
         
     ];
 }
+
+// java page
 function genSidebar4Java(){
     return [
         {
@@ -175,6 +220,51 @@ function genSidebar4Java(){
         }
     ];
 }
+
+// spring page
+function genSidebar4Spring() {
+    return [
+        {
+            title: "Spring 基础",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
+                "spring", 
+                "springmvc",
+                "spring-bean-lifecycle",
+                "spring-aop",
+            ]
+        },
+        {
+            title: "Spring Boot 入门",
+            collapsable: false,
+            children: [
+                "springboot-helloworld",
+                "springboot-data-swagger",
+                "springboot-data-logback",
+                "springboot-data-mybatis",
+                "springboot-data-mongodb",
+                "springboot-data-es",
+                "springboot-data-websocket",
+                "springboot-data-interface",
+                "springboot-data-ratelimit",
+                "springboot-data-quartz",
+            ]
+        },
+        {
+            title: "Spring Boot 进阶",
+            collapsable: false,
+            children: [
+                "springboot-data-multi",
+                "springboot-javaConfig",
+                "springboot-jar-3rd",
+                "springboot-starter-demo",
+                "springboot-javafx-native"
+            ]
+        }
+    ]
+}
+
 // TODO below
 function _getNav(){
 
@@ -222,46 +312,4 @@ function _getSidebarGroup(_pagePath, _title, _prefixPath, _content){
         sidebarDepth: 0, 
         children: content
     };
-}
-function genSidebar4Spring() {
-    return [
-        {
-            title: "Spring 基础",
-            collapsable: false,
-            sidebarDepth: 0, 
-            children: [
-                "spring", 
-                "springmvc",
-                "spring-bean-lifecycle",
-                "spring-aop",
-            ]
-        },
-        {
-            title: "Spring Boot 入门",
-            collapsable: false,
-            children: [
-                "springboot-helloworld",
-                "springboot-data-swagger",
-                "springboot-data-logback",
-                "springboot-data-mybatis",
-                "springboot-data-mongodb",
-                "springboot-data-es",
-                "springboot-data-websocket",
-                "springboot-data-interface",
-                "springboot-data-ratelimit",
-                "springboot-data-quartz",
-            ]
-        },
-        {
-            title: "Spring Boot 进阶",
-            collapsable: false,
-            children: [
-                "springboot-data-multi",
-                "springboot-javaConfig",
-                "springboot-jar-3rd",
-                "springboot-starter-demo",
-                "springboot-javafx-native"
-            ]
-        }
-    ]
 }
