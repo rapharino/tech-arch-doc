@@ -49,17 +49,56 @@ module.exports = {
                             {text: 'Spring Boot 入门', link: '/md/spring/springboot-helloworld.md'},
                             {text: 'Spring Boot 进阶', link: '/md/spring/springboot-data-multi.md'}
                         ]
+                    },
+                    {
+                        text: '数据库相关',
+                        items: [
+                            {
+                                text: 'NoSQL',
+                                items: [
+                                    {text: 'ElasticSearch', link: '/md/db/nosql-es/elasticsearch.md'},
+                                    {text: 'MongoDB', link: '/md/db/nosql-mongo/mongo.md'}
+                                ]
+                            }
+                        ]
                     }
-                    // , {text: "Spring 相关", link: "/md/spring/" }
                 ],
                 sidebar: {
                     "/md/spring/": genSidebar4Spring(),
-                    "/md/java/": genSidebar4Java()
+                    "/md/java/": genSidebar4Java(),
+                    "/md/db/": genSidebar4DB()
                 }
             }
         }
     }
 };
+
+function genSidebar4DB(){
+    return [
+        {
+            title: "NoSQL - ElasticSearch",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
+                "nosql-es/elasticsearch.md", 
+                "nosql-es/elasticsearch-theory.md", 
+                "nosql-es/elasticsearch-setup.md", 
+                "nosql-es/elasticsearch-dsl.md",
+                "nosql-es/elasticsearch-wrapper-query.md"
+            ]
+        },
+        {
+            title: "NoSQL - MongoDB",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [ 
+                "nosql-mongo/mongo.md",
+                "nosql-mongo/mongo-performance-improve.md"
+            ]
+        }
+        
+    ];
+}
 function genSidebar4Java(){
     return [
         {
@@ -136,11 +175,12 @@ function genSidebar4Java(){
         }
     ];
 }
+// TODO below
 function _getNav(){
 
 }
 function _getSidebar(){
-    
+
 }
 function _getSidebarPage(_pagePath){
     return _getSidebarGroups(_pagePath, 
