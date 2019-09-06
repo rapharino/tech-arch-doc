@@ -1,6 +1,6 @@
 ---
 home: true
-#heroImage: /_images/mybatisx-001.gif
+heroImage: /_images/index-read.gif
 actionText: 快速开始 →
 actionLink: /md/java/basic/java-basic-oop.md
 features:
