@@ -86,7 +86,8 @@ module.exports = {
                         text: '原则|模式|规范',
                         items: [
                             {text: '开发原则,流程,协议', link: '/md/dev-spec/spec/dev-rules.md'},
-                            {text: '代码规范', link: '/md/dev-spec/code-style/code-style-alibaba.md'}
+                            {text: '代码规范', link: '/md/dev-spec/code-style/code-style-alibaba.md'},
+                            {text: '设计模式', link: '/md/dev-spec/pattern/1_overview.md'}
                         ]
                     }
                 ],
@@ -122,8 +123,39 @@ function genSidebar4Devspec(){
             sidebarDepth: 0, 
             children: [
                 "code-style/code-style-alibaba.md", 
-                "code-style/code-style-twitter.md",
-                {text: 'Google 代码规范', link: "http://google.github.io/styleguide/javaguide.html"}
+                "code-style/code-style-twitter.md"
+            ]
+        },
+        {
+            title: "设计模式",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
+                "pattern/1_overview.md", 
+                "pattern/2_singleton.md", 
+                "pattern/3_simple_factory.md", 
+                "pattern/4_factory_method.md",
+                "pattern/5_abstract_factory.md",
+                "pattern/6_builder.md",
+                "pattern/7_prototype.md",
+                "pattern/8_facade.md",
+                "pattern/9_adapter.md",
+                "pattern/10_bridge.md",
+                "pattern/11_compsite.md",
+                "pattern/12_decorator.md",
+                "pattern/13_flyweight.md",
+                "pattern/14_proxy.md",
+                "pattern/15_chain.md",
+                "pattern/16_strategy.md",
+                "pattern/17_template.md",
+                "pattern/18_command.md",
+                "pattern/19_observer.md",
+                "pattern/20_visitor.md",
+                "pattern/21_state.md",
+                "pattern/22_interpreter.md",
+                "pattern/23_iterator.md",
+                "pattern/24_mediator.md",
+                "pattern/25_memento.md"
             ]
         }
     ];
