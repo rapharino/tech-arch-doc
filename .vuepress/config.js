@@ -74,17 +74,89 @@ module.exports = {
                                 ]
                             }
                         ]
+                    },
+                    {
+                        text: '工具与部署',
+                        items: [
+                            {text: '开发工具', link: '/md/devops/tool/tool-git.md'},
+                            {text: 'Linux', link: '/md/devops/linux/linux.md'}
+                        ]
+                    },
+                    {
+                        text: '原则|模式|规范',
+                        items: [
+                            {text: '开发原则,流程,协议', link: '/md/dev-spec/spec/dev-rules.md'},
+                            {text: '代码规范', link: '/md/dev-spec/code-style/code-style-alibaba.md'}
+                        ]
                     }
                 ],
                 sidebar: {
                     "/md/spring/": genSidebar4Spring(),
                     "/md/java/": genSidebar4Java(),
-                    "/md/db/": genSidebar4DB()
+                    "/md/db/": genSidebar4DB(),
+                    "/md/devops/": genSidebar4Devops(),
+                    "/md/dev-spec/": genSidebar4Devspec()
                 }
             }
         }
     }
 };
+
+// Dev-spec page
+function genSidebar4Devspec(){
+    return [
+        {
+            title: "开发原则,流程,协议",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
+                "spec/dev-rules.md",
+                "spec/dev-workflow.md", 
+                "spec/dev-opensource.md", 
+                "spec/dev-knowledge.md"
+            ]
+        },
+        {
+            title: "代码规范",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
+                "code-style/code-style-alibaba.md", 
+                "code-style/code-style-twitter.md",
+                {text: 'Google 代码规范', link: "http://google.github.io/styleguide/javaguide.html"}
+            ]
+        }
+    ];
+}
+
+// DevOPS page
+function genSidebar4Devops(){
+    return [
+        {
+            title: "开发工具",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
+                "tool/tool.md",
+                "tool/tool-git.md", 
+                "tool/tool-ide.md", 
+                "tool/tool-maven.md", 
+                "tool/tool-jenkins-gitlab.md"
+            ]
+        },
+        {
+            title: "Linux",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
+                "linux/linux.md", 
+                "linux/linux-usage.md", 
+                "linux/linux-curl.md", 
+                "linux/linux-service.md"
+            ]
+        }
+    ];
+}
 
 // DB page
 function genSidebar4DB(){
