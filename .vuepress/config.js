@@ -28,7 +28,7 @@ module.exports = {
         }]
     ],
     themeConfig: {
-        repo: "realpdai/tech-arch-doc",
+        //repo: "realpdai/tech-arch-doc",
         docsRepo: "realpdai/tech-arch-doc",
         editLinks: true,
         sidebarDepth:0,
@@ -40,7 +40,7 @@ module.exports = {
                 lastUpdated: "上次更新",
                 nav: [
                     {
-                        text: 'Java 相关',
+                        text: 'Java',
                         items: [
                             {text: 'Java 基础', link: '/md/java/basic/java-basic-oop.md'},
                             {text: 'Java 集合框架', link: '/md/java/collection/java-collection-all.md'},
@@ -50,18 +50,21 @@ module.exports = {
                         ]
                     },
                     {
-                        text: 'Spring 相关',
+                        text: 'Spring',
                         items: [
                             {text: 'Spring 基础', link: '/md/spring/spring.md'},
                             {text: 'Spring Boot 入门', link: '/md/spring/springboot-helloworld.md'},
                             {text: 'Spring Boot 进阶', link: '/md/spring/springboot-data-multi.md'}
                         ]
                     },
+                    // {
+                    //     text: '算法|协议', link: '/md/about/me/about-me.md'
+                    // },
                     {
-                        text: '数据库相关',
+                        text: '数据库',
                         items: [
                             {
-                                text: '数据库原理和SQL',
+                                text: 'DB',
                                 items: [
                                     {text: '数据库原理', link: '/md/db/sql/sql-db.md'},
                                     {text: 'SQL语言', link: '/md/db/sql-lan/sql-lan.md'}
@@ -83,12 +86,18 @@ module.exports = {
                         ]
                     },
                     {
-                        text: '工具与部署',
+                        text: '工具|部署',
                         items: [
                             {text: '开发工具', link: '/md/devops/tool/tool-git.md'},
                             {text: 'Linux', link: '/md/devops/linux/linux.md'}
                         ]
                     },
+                    // {
+                    //     text: '开发|架构', link: '/md/about/me/about-me.md'
+                    // },
+                    // {
+                    //     text: '源码阅读', link: '/md/about/me/about-me.md'
+                    // },
                     {
                         text: '原则|模式|规范',
                         items: [
@@ -123,6 +132,7 @@ function genSidebar4About(){
             sidebarDepth: 0, 
             children: [
                 "me/about-me.md",
+                "me/about-content.md",
                 "me/about-arch.md",
                 "me/about-motivation.md"
             ]
@@ -139,12 +149,19 @@ function genSidebar4About(){
             ]
         },
         {
-            title: "关于 - 其它项目和Research",
+            title: "关于 - 项目和探究",
             collapsable: false,
             sidebarDepth: 0, 
             children: [
                 "others/others-project-netscan.md", 
                 "others/others-research-nodered.md"
+            ]
+        },
+        {
+            title: "关于 - 读书与随笔",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
             ]
         }
     ];
@@ -232,6 +249,27 @@ function genSidebar4Devops(){
                 "linux/linux-usage.md", 
                 "linux/linux-curl.md", 
                 "linux/linux-service.md"
+            ]
+        },
+        {
+            title: "容器化 - Docker",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
+            ]
+        },
+        {
+            title: "容器编排 - Kubernetes",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
+            ]
+        },
+        {
+            title: "服务网格 - Service Mesh",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
             ]
         }
     ];
@@ -367,6 +405,13 @@ function genSidebar4Java(){
                 "java8/java8-localdatetime.md",
                 "java8/java8-javafx.md",
                 "java8/java8-others.md"
+            ]
+        },
+        {
+            title: "JVM相关",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
             ]
         }
     ];
