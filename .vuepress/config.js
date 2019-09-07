@@ -96,6 +96,9 @@ module.exports = {
                             {text: '代码规范', link: '/md/dev-spec/code-style/code-style-alibaba.md'},
                             {text: '设计模式', link: '/md/dev-spec/pattern/1_overview.md'}
                         ]
+                    },
+                    {
+                        text: '关于', link: '/md/about/me/about-me.md'
                     }
                 ],
                 sidebar: {
@@ -103,12 +106,49 @@ module.exports = {
                     "/md/java/": genSidebar4Java(),
                     "/md/db/": genSidebar4DB(),
                     "/md/devops/": genSidebar4Devops(),
-                    "/md/dev-spec/": genSidebar4Devspec()
+                    "/md/dev-spec/": genSidebar4Devspec(),
+                    "/md/about/": genSidebar4About()
                 }
             }
         }
     }
 };
+
+// About page
+function genSidebar4About(){
+    return [
+        {
+            title: "关于",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
+                "me/about-me.md",
+                "me/about-arch.md",
+                "me/about-motivation.md"
+            ]
+        },
+        {
+            title: "关于 - 本文档的搭建",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
+                "blog/blog-build-vuepress.md", 
+                "blog/blog-build-ci.md",
+                "blog/blog-build-cd.md",
+                "blog/blog-build-ssl.md"
+            ]
+        },
+        {
+            title: "关于 - 其它项目和Research",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
+                "others/others-project-netscan.md", 
+                "others/others-research-nodered.md"
+            ]
+        }
+    ];
+}
 
 // Dev-spec page
 function genSidebar4Devspec(){
