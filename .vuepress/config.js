@@ -417,7 +417,8 @@ function genSidebar4Java(){
                 "jvm/java-jvm-classload.md",
                 "jvm/java-jvm-jmm.md",
                 "jvm/java-jvm-gc.md",
-                "jvm/java-jvm-param.md"
+                "jvm/java-jvm-param.md",
+                "jvm/java-jvm-oom.md"
             ]
         }
     ];
