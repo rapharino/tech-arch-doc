@@ -12,7 +12,7 @@ module.exports = {
     locales: {
         "/": {
             lang: "zh-CN",
-            title: "戴鹏的个人博客",
+            title: "Java 全栈知识体系",
             description: "包含：Java 基础, Java 部分源码, JVM, Spring, Spring Boot, Spring Cloud, 数据库原理, MySQL, ElasticSearch, MongoDB, Docker, k8s, CI&CD, Linux, DevOps, 分布式, 中间件, 开发工具, Git, IDE, 源码阅读，读书笔记, 开源项目..."
         }
     },
@@ -58,9 +58,9 @@ module.exports = {
                             {text: 'Spring Boot 进阶', link: '/md/spring/springboot-data-multi.md'}
                         ]
                     },
-                    // {
-                    //     text: '算法|协议', link: '/md/about/me/about-me.md'
-                    // },
+                    {
+                        text: '算法', link: '/md/algorithm/alg-basic-overview.md'
+                    },
                     {
                         text: '数据库',
                         items: [
@@ -100,7 +100,7 @@ module.exports = {
                     //     text: '源码阅读', link: '/md/about/me/about-me.md'
                     // },
                     {
-                        text: '原则|模式|规范',
+                        text: '方法论',
                         items: [
                             {text: '开发原则,流程,协议', link: '/md/dev-spec/spec/dev-rules.md'},
                             {text: '代码规范', link: '/md/dev-spec/code-style/code-style-alibaba.md'},
@@ -115,6 +115,7 @@ module.exports = {
                     "/md/spring/": genSidebar4Spring(),
                     "/md/java/": genSidebar4Java(),
                     "/md/db/": genSidebar4DB(),
+                    "/md/algorithm/": genSidebar4Alg(),
                     "/md/devops/": genSidebar4Devops(),
                     "/md/dev-spec/": genSidebar4Devspec(),
                     "/md/about/": genSidebar4About()
@@ -123,6 +124,86 @@ module.exports = {
         }
     }
 };
+
+function genSidebar4Alg(){
+    return [
+        {
+            title: "数据结构基础",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
+                "alg-basic-overview.md", 
+                "alg-basic-array.md", 
+                "alg-basic-linklist.md", 
+                "alg-basic-queue.md", 
+                "alg-basic-stack.md", 
+                "alg-basic-tree-balance.md", 
+                "alg-basic-tree-redblack.md", 
+                "alg-basic-tree-search.md", 
+                "alg-basic-graph.md"
+            ]
+        },
+        {
+            title: "内部排序",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
+                "alg-sort-overview.md", 
+                "alg-sort-x-bubble.md", 
+                "alg-sort-x-simple.md", 
+                "alg-sort-x-fast.md", 
+                "alg-sort-x-heap.md", 
+                "alg-sort-x-insert.md", 
+                "alg-sort-x-radix.md", 
+                "alg-sort-x-select.md", 
+                "alg-sort-x-shell.md"
+            ]
+        },
+        {
+            title: "算法思想",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
+                "alg-core-divide-and-conquer.md", 
+                "alg-core-dynamic.md", 
+                "alg-core-greedy.md", 
+                "alg-core-backtracking.md",
+                "alg-core-search.md"
+            ]
+        },
+        {
+            title: "安全算法",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
+                "alg-security-degist.md", 
+                "alg-security-secure.md"                
+            ]
+        },
+        {
+            title: "分布式系统算法",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
+                "alg-distribute-overview.md", 
+                "alg-distribute-x-consistency-hash.md", 
+                "alg-distribute-x-paxos.md", 
+                "alg-distribute-x-raft.md", 
+                "alg-distribute-x-snowflake.md", 
+                "alg-distribute-x-zab.md"                
+            ]
+        },
+        {
+            title: "其它算法相关",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
+                "alg-other-mind.md"
+            ]
+        }
+    ];
+     
+}
 
 // About page
 function genSidebar4About(){
