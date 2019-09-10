@@ -13,3 +13,5 @@ features:
 footer: MIT License 2.0 | © 2017-2019 pdai
 ---
 
+
+[![Build Status](https://travis-ci.com/realpdai/tech-arch-doc.svg?branch=master)](https://travis-ci.com/realpdai/tech-arch-doc)
