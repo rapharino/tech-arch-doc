@@ -23,7 +23,7 @@ module.exports = {
             selector: 'img',
             // See: https://github.com/francoischalifour/medium-zoom#options
             options: {
-              margin: 16
+              margin: 17
             }
         }]
     ],
