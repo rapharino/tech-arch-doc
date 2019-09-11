@@ -12,7 +12,7 @@ module.exports = {
     locales: {
         "/": {
             lang: "zh-CN",
-            title: "Java 全栈知识体系",
+            title: "戴鹏的个人博客",
             description: "包含：Java 基础, Java 部分源码, JVM, Spring, Spring Boot, Spring Cloud, 数据库原理, MySQL, ElasticSearch, MongoDB, Docker, k8s, CI&CD, Linux, DevOps, 分布式, 中间件, 开发工具, Git, IDE, 源码阅读，读书笔记, 开源项目..."
         }
     },
