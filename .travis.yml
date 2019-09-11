@@ -22,5 +22,5 @@ before_install:
   - export TZ=Asia/Shanghai
 
 script:
-  - yarn run build
+  - vuepress build
 
