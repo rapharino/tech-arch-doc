@@ -59,7 +59,16 @@ module.exports = {
                         ]
                     },
                     {
-                        text: '算法', link: '/md/algorithm/alg-basic-overview.md'
+                        text: '算法', 
+                        link: '/md/algorithm/alg-basic-overview.md',
+                        items: [
+                            {text: '数据结构基础', link: '/md/algorithm/alg-basic-overview.md'},
+                            {text: '内部排序', link: '/md/algorithm/alg-sort-overview.md'},
+                            {text: '算法思想', link: '/md/algorithm/alg-core-divide-and-conquer.md'},
+                            {text: '安全算法', link: '/md/algorithm/alg-security-degist.md'},
+                            {text: '分布式系统算法', link: '/md/algorithm/alg-distribute-overview.md'},
+                            {text: '其它算法相关', link: '/md/algorithm/alg-other-mind.md'},
+                        ]
                     },
                     {
                         text: '数据库',
@@ -87,22 +96,28 @@ module.exports = {
                         ]
                     },
                     {
+                        text: '开发', link: '/md/tbd.md'
+                    },
+                    {
+                        text: '架构', link: '/md/tbd.md'
+                    },
+                    {
                         text: '工具|部署',
                         items: [
                             {text: '开发工具', link: '/md/devops/tool/tool-git.md'},
                             {text: 'Linux', link: '/md/devops/linux/linux.md'}
                         ]
                     },
-                    // {
-                    //     text: '开发|架构', link: '/md/about/me/about-me.md'
-                    // },
-                    // {
-                    //     text: '源码阅读', link: '/md/about/me/about-me.md'
-                    // },
+                    {
+                        text: '源码|项目', link: '/md/tbd.md'
+                    },
                     {
                         text: '方法论',
                         items: [
-                            {text: '开发原则,流程,协议', link: '/md/dev-spec/spec/dev-rules.md'},
+                            {text: '开发原则(SOLID)', link: '/md/dev-spec/spec/dev-rules.md'},
+                            {text: '分布式理论(CAP&BASE)', link: '/md/dev-spec/spec/dev-cap-base.md'},
+                            {text: '开发流程', link: '/md/dev-spec/spec/dev-workflow.md'},
+                            {text: '开源协议', link: '/md/dev-spec/spec/dev-opensource.md'},
                             {text: '代码规范', link: '/md/dev-spec/code-style/code-style-alibaba.md'},
                             {text: '设计模式', link: '/md/dev-spec/pattern/1_overview.md'}
                         ]
@@ -135,8 +150,8 @@ function genSidebar4Alg(){
                 "alg-basic-overview.md", 
                 "alg-basic-array.md", 
                 "alg-basic-linklist.md", 
-                "alg-basic-queue.md", 
-                "alg-basic-stack.md", 
+                "alg-basic-hashtable.md", 
+                "alg-basic-stack_queue.md", 
                 "alg-basic-tree-balance.md", 
                 "alg-basic-tree-redblack.md", 
                 "alg-basic-tree-search.md", 
@@ -259,6 +274,7 @@ function genSidebar4Devspec(){
             sidebarDepth: 0, 
             children: [
                 "spec/dev-rules.md",
+                "spec/dev-cap-base.md",
                 "spec/dev-workflow.md", 
                 "spec/dev-opensource.md", 
                 "spec/dev-knowledge.md"
