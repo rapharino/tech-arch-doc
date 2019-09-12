@@ -47,7 +47,8 @@ module.exports = {
                             {text: 'Java 多线程与并发', link: '/md/java/thread/java-thread.md'},
                             {text: 'Java IO/NIO/AIO', link: '/md/java/io/java-io.md'},
                             {text: 'Java8 特性详解', link: '/md/java/java8/java8.md'},
-                            {text: 'JVM 相关', link: '/md/java/jvm/java-jvm-classload.md'}
+                            {text: 'JVM 相关', link: '/md/java/jvm/java-jvm-classload.md'},
+                            {text: 'Java 其它相关', link: '/md/java/others/java-others-awesome-java.md'}
                         ]
                     },
                     {
@@ -516,6 +517,15 @@ function genSidebar4Java(){
                 "jvm/java-jvm-gc.md",
                 "jvm/java-jvm-param.md",
                 "jvm/java-jvm-oom.md"
+            ]
+        },
+        {
+            title: "Java其它相关",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
+                "others/java-others-awesome-java.md",
+                "others/java-others-better-java.md"
             ]
         }
     ];
