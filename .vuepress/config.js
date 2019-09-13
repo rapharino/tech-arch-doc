@@ -97,7 +97,11 @@ module.exports = {
                         ]
                     },
                     {
-                        text: '开发', link: '/md/tbd.md'
+                        text: '开发',
+                        items: [
+                            {text: '网络协议', link: '/md/develop/protocol/dev-protocol-overview.md'},
+                            {text: '开发随手记', link: '/md/develop/usage/dev-usage-overview.md'}
+                        ]
                     },
                     {
                         text: '架构', link: '/md/tbd.md'
@@ -133,6 +137,7 @@ module.exports = {
                     "/md/db/": genSidebar4DB(),
                     "/md/algorithm/": genSidebar4Alg(),
                     "/md/devops/": genSidebar4Devops(),
+                    "/md/develop/": genSidebar4develop(),
                     "/md/dev-spec/": genSidebar4Devspec(),
                     "/md/about/": genSidebar4About()
                 }
@@ -141,6 +146,41 @@ module.exports = {
     }
 };
 
+function genSidebar4develop(){
+    return [
+        {
+            title: "网络协议",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
+                "protocol/dev-protocol-overview.md", 
+                "protocol/dev-protocol-osi7.md", 
+                "protocol/dev-protocol-ipmac.md", 
+                "protocol/dev-protocol-tcpip.md", 
+                "protocol/dev-protocol-http.md",
+                "protocol/dev-protocol-udp.md",
+                "protocol/dev-protocol-dns.md"
+            ]
+        },
+        {
+            title: "开发随手记",
+            collapsable: false,
+            sidebarDepth: 0, 
+            children: [
+                "usage/dev-usage-overview.md", 
+                "usage/dev-usage-newObj.md", 
+                "usage/dev-usage-exe-package.md",
+                "usage/dev-usage-jar-readfile.md", 
+                "usage/dev-usage-input-password.md",
+                "usage/dev-usage-export-pdf.md", 
+                "usage/dev-usage-flotjs.md",
+                "usage/dev-usage-zkfinger.md"
+            ]
+        }
+    ];
+}
+
+// Alg page
 function genSidebar4Alg(){
     return [
         {
@@ -560,6 +600,7 @@ function genSidebar4Spring() {
                 "springboot-data-mybatis",
                 "springboot-data-mongodb",
                 "springboot-data-es",
+                "springboot-data-thymeleaf",
                 "springboot-data-websocket",
                 "springboot-data-interface",
                 "springboot-data-ratelimit",

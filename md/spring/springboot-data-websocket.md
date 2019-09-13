@@ -1,4 +1,4 @@
-## Spring Boot - websoeckt Demo
+## Spring Boot - Websocket Demo
 
 > 从网上找的例子，说说其中的缺陷：（无所谓了只是一个socket demo而已）@pdai.
 + disruptor配置不合理；
