@@ -404,7 +404,12 @@ function genSidebar4DB(){
             collapsable: false,
             sidebarDepth: 0, 
             children: [
-                "sql-mysql/sql-mysql-theory.md"
+                "sql-mysql/sql-mysql-theory.md",
+                "sql-mysql/sql-mysql-engine.md",
+                "sql-mysql/sql-mysql-b-tree.md",
+                "sql-mysql/sql-mysql-performance.md",
+                "sql-mysql/sql-mysql-devide.md",
+                "sql-mysql/sql-mysql-slave.md"
             ]
         },
         {

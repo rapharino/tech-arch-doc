@@ -1,7 +1,7 @@
-### SQL语言 - Leetcode Database相关题目
+### SQL语言 - Leetcode DB题目
 
 <!-- GFM-TOC -->
-- [SQL语言 - Leetcode Database相关题目](#sql%e8%af%ad%e8%a8%80---leetcode-database%e7%9b%b8%e5%85%b3%e9%a2%98%e7%9b%ae)
+- [SQL语言 - Leetcode DB题目](#sql%e8%af%ad%e8%a8%80---leetcode-db%e9%a2%98%e7%9b%ae)
 - [595. Big Countries](#595-big-countries)
   - [Description](#description)
   - [SQL Schema](#sql-schema)
