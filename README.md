@@ -14,4 +14,17 @@ footer: MIT License 2.0 | © 2017-present pdai
 ---
 
 
-[![Build Status](https://travis-ci.com/realpdai/tech-arch-doc.svg?branch=master)](https://travis-ci.com/realpdai/tech-arch-doc)
+<p align="center">
+  <a href="https://travis-ci.com/realpdai/tech-arch-doc.svg?branch=master" target="_blank">
+    <img src="https://travis-ci.com/realpdai/tech-arch-doc.svg?branch=master">
+  </a>
+  <a href="https://github.com/realpdai/tech-arch-doc/blob/master/LICENSE" target="_blank">
+    <img src="https://img.shields.io/github/license/realpdai/tech-arch-doc">
+  </a>
+<a href="https://github.com/realpdai/tech-arch-doc" target="_blank">
+    <img src="https://img.shields.io/badge/pdai-full%20stack-blue">
+  </a>
+  	
+</p>
+
+
