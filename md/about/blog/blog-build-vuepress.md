@@ -4,6 +4,14 @@
 
 ### 文档基础搭建
 > 文档的搭建比较简单，主要记录流程。
+
+先看下其整体的插件架构案例：https://vuepress.vuejs.org/zh/plugin/
+
+![](/_images/blog/blog-architecture.png)
+
+
+
+
 #### brew安装或者更新
 
 https://blog.csdn.net/yemao_guyue/article/details/80575532
@@ -74,12 +82,48 @@ https://segmentfault.com/a/1190000015237352
 ### 文档搭建插件和配置
 > 这里主要介绍文档搭建除了默认加载的配置和插件之外，新增加的插件和配置。
 
-
 #### 文档附加样式配置：主题
 
 最佳配置请参考：（其它官网的配置都没有更新）
 
 https://vuepress.vuejs.org/zh/miscellaneous/design-concepts.html#overriding
+
++ index.styl - 覆盖的样式
+```stylus
+.custom-page-class{
+    /* 自定义的样式 */
+}
+
+// markdown blockquote
+blockquote
+  font-size 1rem
+  color #2c3e50;
+  border-left .5rem solid #42b983
+  background-color #f3f5f7
+  margin 1rem 0
+  padding 1rem 0 1rem 1rem
+
+  & > p
+    margin 0
+
+// markdown h2
+h2
+  font-size 1.65rem
+  padding-bottom 1rem
+  border-bottom 1px solid $borderColor
+```
+
++ palette.styl - 样式配置覆盖
+```stylus
+// 内容的宽度
+$contentWidth = 100%
+
+// 颜色
+$accentColor = #3eaf7c
+$textColor = #2c3e50
+$borderColor = #eaecef
+$codeBgColor = #282c34
+```
 
 #### 添加返回最上插件
 
