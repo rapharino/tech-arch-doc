@@ -66,3 +66,7 @@ script:
 ![](/_images/blog/blog-ci-6.png)
 
 
+#### 生成build 状态svg
+
+
+![](/_images/blog/blog-ci-3.png)
