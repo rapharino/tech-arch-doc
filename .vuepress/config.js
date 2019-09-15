@@ -301,6 +301,12 @@ function genSidebar4About(){
             collapsable: false,
             sidebarDepth: 0, 
             children: [
+                "book/book-read-arch-extendable.md",
+                "book/book-read-code-art.md",
+                "book/book-read-code-rebuild.md",
+                "book/book-read-devops-inaction.md",
+                "book/book-read-offer.md",
+                "book/book-read-scrum-xp.md",
             ]
         }
     ];
